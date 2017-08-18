@@ -1,0 +1,125 @@
+<!--
+  Generated template for the ScreenPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Screen</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="counter == 1">
+    <ion-list radio-group>
+      <ion-list-header>
+        <h1 style="text-align: center;">หัวข้อที่ {{counter}}</h1>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Q{{counter}} A1</ion-label>
+        <ion-radio value="1" (click)="selectedAnswer(1)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A2</ion-label>
+        <ion-radio value="2" (click)="selectedAnswer(2)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A3</ion-label>
+        <ion-radio value="3" (click)="selectedAnswer(3)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A4</ion-label>
+        <ion-radio value="4" (click)="selectedAnswer(4)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="counter == 2">
+    <ion-list radio-group>
+      <ion-list-header>
+        <h1 style="text-align: center;">หัวข้อที่ {{counter}}</h1>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Q{{counter}} A1</ion-label>
+        <ion-radio value="1" (click)="selectedAnswer(1)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A2</ion-label>
+        <ion-radio value="2" (click)="selectedAnswer(2)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A3</ion-label>
+        <ion-radio value="3" (click)="selectedAnswer(3)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A4</ion-label>
+        <ion-radio value="4" (click)="selectedAnswer(4)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="counter == 3">
+    <ion-list radio-group>
+      <ion-list-header>
+        <h1 style="text-align: center;">หัวข้อที่ {{counter}}</h1>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Q{{counter}} A1</ion-label>
+        <ion-radio value="1" (click)="selectedAnswer(1)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A2</ion-label>
+        <ion-radio value="2" (click)="selectedAnswer(2)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A3</ion-label>
+        <ion-radio value="3" (click)="selectedAnswer(3)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A4</ion-label>
+        <ion-radio value="4" (click)="selectedAnswer(4)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="counter == 4">
+    <ion-list radio-group>
+      <ion-list-header>
+        <h1 style="text-align: center;">หัวข้อที่ {{counter}}</h1>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Q{{counter}} A1</ion-label>
+        <ion-radio value="1" (click)="selectedAnswer(1)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A2</ion-label>
+        <ion-radio value="2" (click)="selectedAnswer(2)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A3</ion-label>
+        <ion-radio value="3" (click)="selectedAnswer(3)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Q{{counter}} A4</ion-label>
+        <ion-radio value="4" (click)="selectedAnswer(4)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="counter == 5">
+    <ion-list radio-group>
+      <ion-list-header>
+        <h1 style="text-align: center;">ผลลัพธ์</h1>
+      </ion-list-header>
+      <ion-item style="text-align: center;">
+        <ion-label><h1>{{answer}}</h1></ion-label>
+      </ion-item> 
+      <ion-item style="text-align: center;">
+        <button ion-button color="secondary" outline (click)="reset()">เริ่มใหม่</button>
+      </ion-item>     
+    </ion-list>
+  </div>
+</ion-content>
